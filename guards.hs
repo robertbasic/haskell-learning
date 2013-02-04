@@ -24,3 +24,9 @@ initials firstname lastname = [f] ++ ". " ++ [l] ++ "."
 
 initials' :: String -> String -> String
 initials' (f:firstname) (l:lastname) = [f] ++ ". " ++ [l] ++ "."
+
+initials'' :: String -> String -> String
+initials'' firstname lastname =
+    let f = head firstname
+        l = head lastname
+    in [f] ++ ". " ++ [l] ++ "."
